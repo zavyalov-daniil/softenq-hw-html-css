@@ -7,13 +7,14 @@
     <div>28 сентября 2001</div>
     <div class="div_education">
         <div class="div_education-div_university">ОмГУ имени Ф. М. Достоевского</div>
-        <div>МИБ-001</div>
+        <div class="div_education-div_group">МИБ-001</div>
     </div>
     <div class="div_git">
-        <div class="div_git-div_github">GitHub: https://github.com/zavyalov-daniil</div>
-        <div class="div_git-div_gitlab">GitLab: https://gitlab.com/zavyalov.daniil</div>
+        <a href="https://github.com/zavyalov-daniil" class="div_git-a_github">GitHub</a>
+        <a href="https://gitlab.com/zavyalov.daniil" class="div_git-a_gitlab">GitLab</a>
     </div>
     <img src="Rock.gif">
+    <p class="p_boop"><input type="button" value="Just boop"></p>
 </body>
 <style>
     .body {
@@ -27,26 +28,35 @@
     .div_education {
         border: 3px solid #222;
         margin: 20px;
-        color: wheat;
-        background-color: brown;
+        color: white;
+        background-color: indianred;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .div_education-div_university {
-        border: 1px solid #222;
+        border: 1px solid white;
         margin: 10px;
         font-size: 20px;
+    }
+    .div_education-div_group {
+        margin: 5px;
+        font-weight: bold;
+        font-size: 15px;
     }
     .div_git {
         border: 5px ridge green;
         margin: 10px;
         font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .div_git-div_github {
+    .div_git-a_github {
         font-weight: bold;
+        margin: 5px;
     }
-    .div_git-div_gitlab {
+    .div_git-a_gitlab {
         color: dimgray;
-    }
+        margin: 5px;
 </style>
