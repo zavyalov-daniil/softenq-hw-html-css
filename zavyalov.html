@@ -5,7 +5,7 @@
     <title>Zavyalov Daniil</title>
     <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
-<body>
+<body onload="changeGitSectionColor()">
     <img src="photo.jpg" width=180px height=230px onclick="photoClickAlert()">
     <h2 class="name">Zavyalov Daniil</h2>
     <div class="birthday">28 сентября 2001</div>
@@ -13,7 +13,7 @@
         <div class="education-university">ОмГУ имени Ф. М. Достоевского</div>
         <div class="education-group">МИБ-001</div>
     </div>
-    <div class="git" onmouseenter="mouseEnterHandler()" onmouseout="mouseOutHandler()">
+    <div id = "git_section" class="git" onmouseenter="mouseEnterHandler()" onmouseout="mouseOutHandler()">
         <a href="https://github.com/zavyalov-daniil" class="git-github">GitHub</a>
         <a href="https://gitlab.com/zavyalov.daniil" class="git-gitlab">GitLab</a>
     </div>

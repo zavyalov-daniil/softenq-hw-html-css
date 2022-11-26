@@ -10,3 +10,11 @@ function mouseOutHandler(event) {
 function changeInputAlert(event) {
     alert(event.target.value);
 }
+function changeGitSectionColor() {
+    let color = ["#cafcca", "#badbad", "#c9c3af", "#dedace", "#afeeee", "#c7fcec", "#daf7f7"];
+    function changeBackgroundColor() {
+        let element = document.getElementById("git_section");
+        element.style["background-color"] = color[Math.floor(Math.random() * color.length)];
+    }
+    setInterval(changeBackgroundColor, 1000)
+}
