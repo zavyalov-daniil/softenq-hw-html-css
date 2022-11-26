@@ -1,7 +1,11 @@
+<!DOCTYPE HTML>
+<html>
 <head>
+    <meta charset="utf-8">
     <title>Zavyalov Daniil</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
-<body class="body">
+<body>
     <img src="photo.jpg" width=180px height=230px onclick="photoClickAlert()">
     <h2 class="name">Zavyalov Daniil</h2>
     <div class="birthday">28 сентября 2001</div>
@@ -15,71 +19,6 @@
     </div>
     <input onchange="changeInputAlert(event)"/>
     <img src="Rock.gif" class="rock_gif">
+    <script src="script.js"></script>
 </body>
-<style>
-    .body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .name {
-        color: darkblue;
-    }
-    .birthday {
-        text-decoration: underline;
-        color: #62639b;
-    }
-    .education {
-        border: 3px solid #222;
-        margin: 20px;
-        color: white;
-        background-color: #4e77ad;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .education-university {
-        border: 1px solid white;
-        margin: 10px;
-        font-size: 20px;
-    }
-    .education-group {
-        margin: 5px;
-        font-weight: bold;
-        font-size: 15px;
-    }
-    .git {
-        border: 5px ridge #62639b;
-        margin: 10px;
-        font-size: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .git-github {
-        font-weight: bold;
-        margin: 5px;
-    }
-    .git-gitlab {
-        color: dimgray;
-        margin: 5px;
-    }
-    .rock_gif {
-        margin: 10px;
-    }
-</style>
-<script>
-    function photoClickAlert() {
-        alert("Please don't click here");
-    }
-    function mouseEnterHandler(event) {
-        console.log("event", event);
-    }
-    function mouseOutHandler(event) {
-        console.log("event", event);
-    }
-    function changeInputAlert(event) {
-        alert(event.target.value);
-    }
-</script>
-
+</html>
