@@ -2,19 +2,19 @@
     <title>Zavyalov Daniil</title>
 </head>
 <body class="body">
-    <img src="photo.jpg" width=190px height=230px onclick="photoClickAlert()">
-    <h2 class="h2_name">Zavyalov Daniil</h2>
-    <div class="div_birthday">28 сентября 2001</div>
-    <div class="div_education">
-        <div class="div_education-div_university">ОмГУ имени Ф. М. Достоевского</div>
-        <div class="div_education-div_group">МИБ-001</div>
+    <img src="photo.jpg" width=180px height=230px onclick="photoClickAlert()">
+    <h2 class="name">Zavyalov Daniil</h2>
+    <div class="birthday">28 сентября 2001</div>
+    <div class="education">
+        <div class="education-university">ОмГУ имени Ф. М. Достоевского</div>
+        <div class="education-group">МИБ-001</div>
     </div>
-    <div class="div_git" onmouseenter="mouseEnterHandler()" onmouseout="mouseOutHandler()">
-        <a href="https://github.com/zavyalov-daniil" class="div_git-a_github">GitHub</a>
-        <a href="https://gitlab.com/zavyalov.daniil" class="div_git-a_gitlab">GitLab</a>
+    <div class="git" onmouseenter="mouseEnterHandler()" onmouseout="mouseOutHandler()">
+        <a href="https://github.com/zavyalov-daniil" class="git-github">GitHub</a>
+        <a href="https://gitlab.com/zavyalov.daniil" class="git-gitlab">GitLab</a>
     </div>
     <input onchange="changeInputAlert(event)"/>
-    <img src="Rock.gif">
+    <img src="Rock.gif" class="rock_gif">
 </body>
 <style>
     .body {
@@ -22,47 +22,50 @@
         flex-direction: column;
         align-items: center;
     }
-    .h2_name {
+    .name {
         color: darkblue;
     }
-    .div_birthday {
+    .birthday {
         text-decoration: underline;
-        color: crimson;
+        color: #62639b;
     }
-    .div_education {
+    .education {
         border: 3px solid #222;
         margin: 20px;
         color: white;
-        background-color: indianred;
+        background-color: #4e77ad;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .div_education-div_university {
+    .education-university {
         border: 1px solid white;
         margin: 10px;
         font-size: 20px;
     }
-    .div_education-div_group {
+    .education-group {
         margin: 5px;
         font-weight: bold;
         font-size: 15px;
     }
-    .div_git {
-        border: 5px ridge green;
+    .git {
+        border: 5px ridge #62639b;
         margin: 10px;
         font-size: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .div_git-a_github {
+    .git-github {
         font-weight: bold;
         margin: 5px;
     }
-    .div_git-a_gitlab {
+    .git-gitlab {
         color: dimgray;
         margin: 5px;
+    }
+    .rock_gif {
+        margin: 10px;
     }
 </style>
 <script>
