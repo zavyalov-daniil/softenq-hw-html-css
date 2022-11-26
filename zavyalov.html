@@ -2,17 +2,18 @@
     <title>Zavyalov Daniil</title>
 </head>
 <body class="body">
-    <img src="photo.jpg" width=190px height=230px>
+    <img src="photo.jpg" width=190px height=230px onclick="photoClickAlert()">
     <h2 class="h2_name">Zavyalov Daniil</h2>
     <div class="div_birthday">28 сентября 2001</div>
     <div class="div_education">
         <div class="div_education-div_university">ОмГУ имени Ф. М. Достоевского</div>
         <div class="div_education-div_group">МИБ-001</div>
     </div>
-    <div class="div_git">
+    <div class="div_git" onmouseenter="mouseEnterHandler()" onmouseout="mouseOutHandler()">
         <a href="https://github.com/zavyalov-daniil" class="div_git-a_github">GitHub</a>
         <a href="https://gitlab.com/zavyalov.daniil" class="div_git-a_gitlab">GitLab</a>
     </div>
+    <input onchange="changeInputAlert(event)"/>
     <img src="Rock.gif">
 </body>
 <style>
@@ -64,3 +65,18 @@
         margin: 5px;
     }
 </style>
+<script>
+    function photoClickAlert() {
+        alert("Please don't click here");
+    }
+    function mouseEnterHandler(event) {
+        console.log("event", event);
+    }
+    function mouseOutHandler(event) {
+        console.log("event", event);
+    }
+    function changeInputAlert(event) {
+        alert(event.target.value);
+    }
+</script>
+
