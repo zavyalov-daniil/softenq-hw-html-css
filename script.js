@@ -18,3 +18,15 @@ function changeGitSectionColor() {
     }
     setInterval(changeBackgroundColor, 1000)
 }
+function timer() {
+    let i = 1;
+    setInterval(
+        () => {
+            i++;
+            document.getElementById("timer").innerHTML = "You are on the page for " + i + " seconds";
+        }, 1000)
+}
+function loadPage() {
+    changeGitSectionColor();
+    timer();
+}
